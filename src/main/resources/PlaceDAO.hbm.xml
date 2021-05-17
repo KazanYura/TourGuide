@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "com.tourguide.containers.dao.PlaceDAO" table = "Places">
+
+        <meta attribute = "class-description">
+            This class contains the place detail.
+        </meta>
+
+        <id name = "id" type = "int" column = "id">
+            <generator class="native"/>
+        </id>
+
+        <property name = "name" column = "name" type = "java.lang.String"/>
+        <property name = "price" column = "price" type = "java.lang.Integer"/>
+        <property name = "timeStart" column = "timeStart" type = "java.lang.Double"/>
+        <property name = "timeEnd" column = "timeEnd" type = "java.lang.Double"/>
+        <property name = "timeSpend" column = "timeSpend" type = "java.lang.Double"/>
+        <property name = "stringLocation" column = "stringLocation" type = "java.lang.String"/>
+        <property name = "grade" column = "grade" type = "java.lang.Double"/>
+        <property name = "latitude" column = "latitude" type = "java.lang.Double"/>
+        <property name = "longitude" column = "longitude" type = "java.lang.Double"/>
+        <property name="type" column="type" type="java.lang.Integer"/>
+    </class>
+</hibernate-mapping>
